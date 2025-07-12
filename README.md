@@ -12,7 +12,7 @@ Una aplicación simple de lista de tareas para ayudarte a organizar tu día de m
 
 ## 📸 Vista previa
 
-![Preview](./public/images/preview-img.png);
+![Preview](./public/images/preview-img.png)
 
 ## 🛠️ Tecnologías utilizadas
 
