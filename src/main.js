@@ -92,7 +92,7 @@ function createButtons() {
     editButton.setAttribute("class", "inline-block w-8 h-8 cursor-pointer bg-[url('src/assets/icons/edit-icon.png')] bg-no-repeat bg-cover bg-center");
     editButton.addEventListener("click", (event) => {
         editTask(event.target.parentElement.parentElement);
-        console.log("editing")
+        console.log("editing");
     });
 
     const deleteButton = document.createElement("span");
