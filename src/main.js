@@ -88,14 +88,14 @@ function createButtons() {
     buttonsContainer.setAttribute("class", "flex gap-2");
     
     const editButton = document.createElement("span");
-    editButton.setAttribute("class", "inline-block w-8 h-8 cursor-pointer bg-[url('./src/assets/icons/edit-icon.png')] bg-no-repeat bg-cover bg-center");
+    editButton.setAttribute("class", "inline-block w-8 h-8 cursor-pointer bg-[url('./../src/assets/icons/edit-icon.png')] bg-no-repeat bg-cover bg-center");
     editButton.addEventListener("click", (event) => {
         editTask(event.target.parentElement.parentElement);
         console.log("editing")
     });
 
     const deleteButton = document.createElement("span");
-    deleteButton.setAttribute("class", "inline-block w-8 h-8 cursor-pointer bg-[url('./src/assets/icons/remove-icon.webp')] bg-no-repeat bg-cover bg-center");
+    deleteButton.setAttribute("class", "inline-block w-8 h-8 cursor-pointer bg-[url('./../assets/icons/remove-icon.webp')] bg-no-repeat bg-cover bg-center");
     deleteButton.addEventListener("click", (event) => {
         const task = event.target.parentElement.parentElement.textContent;
         const deleteTask = confirm("Are you sure you want to delete that task?");
