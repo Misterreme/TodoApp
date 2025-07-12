@@ -89,19 +89,20 @@ function createButtons() {
     buttonsContainer.setAttribute("class", "flex gap-2");
     
     const editButton = document.createElement("span");
-    editButton.setAttribute("class", "inline-block w-8 h-8 cursor-pointer bg-[url('src/assets/icons/edit-icon.png')] bg-no-repeat bg-cover bg-center");
+    editButton.innerHTML = `<span class="inline-block w-8 h-8 cursor-pointer bg-[url('/src/assets/icons/edit-icon.png')] bg-no-repeat bg-cover bg-center"></span>`;
     editButton.addEventListener("click", (event) => {
-        editTask(event.target.parentElement.parentElement);
+        // console.log(event.target.parentElement.parentElement)
+        editTask(event.target.parentElement.parentElement.parentElement);
         console.log("editing");
     });
 
     const deleteButton = document.createElement("span");
-    deleteButton.setAttribute("class", "inline-block w-8 h-8 cursor-pointer bg-[url('src/assets/icons/remove-icon.webp')] bg-no-repeat bg-cover bg-center");
+    deleteButton.innerHTML = `<span class="inline-block w-8 h-8 cursor-pointer bg-[url('/src/assets/icons/remove-icon.webp')] bg-no-repeat bg-cover bg-center"></span>`;
     deleteButton.addEventListener("click", (event) => {
-        const task = event.target.parentElement.parentElement.textContent;
+        const task = event.target.parentElement.parentElement.parentElement.textContent;
         const deleteTask = confirm("Are you sure you want to delete that task?");
         if (deleteTask) {
-            event.target.parentElement.parentElement.remove();
+            event.target.parentElement.parentElement.parentElement.remove();
             deleteTaskFromLocalStorage(task);
             console.log(task);
             console.log("deleting")
