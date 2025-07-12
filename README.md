@@ -24,4 +24,4 @@ Una aplicación simple de lista de tareas para ayudarte a organizar tu día de m
 [Clonar Repositorio](https://github.com/Misterreme/Todo-App.git)
 
 ## Github Pages
-[To do App](https://misterreme.github.io/Todo-App/)
+[To do App](https://misterreme.github.io/TodoApp/)
